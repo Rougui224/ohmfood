@@ -1,0 +1,339 @@
+@import 'Utils/_variables.scss';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: $color;
+    font-family: 'Roboto';
+
+}
+body{
+    background-color:$backgroundMain ;
+
+}
+.header {
+    width: 100%;
+    height: 113px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &_logo{
+        background-color: white;
+
+        height: 63px;
+        width: 100%;
+        text-align: center;
+
+        font-family: 'Shrikhand', cursive;
+        font-weight:400;
+        font-size: 30px;
+
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        position: relative;
+        z-index: 2;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &_location{
+        background-color: $locationBackground;
+
+        width: 100%;
+        height: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 17px;
+        &_icon{
+            background-color: $locationBackground;
+
+        }
+        &_text{
+            font-weight: bold;
+            background-color: $locationBackground;
+
+        }
+
+    }
+   
+}
+
+.information {
+    width: 100%;
+    text-align: center;
+    h1 {
+        width: 275px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        color: black;
+        margin: 8px auto;
+        margin-top: 35px;
+    }
+    p {
+        width: 315px;
+        margin: 15px auto;
+    }
+    &_button {
+        width: 218px;
+        height:50px;
+        margin: 25px auto;
+        margin-bottom: 50px;
+        font-size: 16px;
+        border-radius: 25px;
+        border: none;
+
+        background: $backgroundButton;
+        box-shadow: $buttonShadow;
+        color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+.functioning {
+    width: 100%;
+    height: 440px;
+    padding: 20px 25px;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    &_title {
+        width: 100%;
+        height: 31px;
+        font-size: 24px;
+
+    }
+    &_steps {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &_order{
+            background: $backgroundMain;
+            width: 100%;
+            height: 72.38px;
+            display: flex;
+            align-items: center;            
+            gap: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            &_number{
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: #9356DC ;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                right: 12px;
+                font-weight: 500;
+                font-size: 14.1818px;
+            }
+            &_text{
+                margin-left: 12px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.restaurant {
+    width: 100%;
+    padding:50px 20px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    &_title {
+        width: 100%;
+    }
+    &_allCards {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &_twoCards {
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            a {
+                display: block;
+                text-decoration: none;
+
+                width: 100%;
+                height: 251px;
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+
+            }
+            &_card {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                &_img {
+                    width: 100%;
+                    height: 174px;
+                    background: no-repeat center url('../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+                    background-size: cover;
+                    &--background1{
+                        background: no-repeat center url('../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
+                        background-size: cover;
+
+                    }
+                    &--background2{
+                        background: no-repeat center url('../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
+                        background-size: cover;
+
+                    }
+                    &--background3{
+                        background: no-repeat center url('../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
+                        background-size: cover;
+
+
+                    }
+                    h3 {
+                        width: 85px;
+                        height: 30px;
+                        text-align: center;
+                        position: absolute;
+                        top: 13px;
+                        right: 10px;
+                        background-color: $backgroundIcon;
+                        color: rgba(0, 135, 102, 1);
+                        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+                        border-radius: 2px;
+                        padding: 5px;
+                        font-size: 15px;
+
+                        
+                    } 
+                   
+                }
+                &_text {
+                    width: 100%;
+                    height: 77px;
+                    padding: 10px;
+                    display: flex;
+                    &_description {
+                        width: 80%;
+                        height: 100%;
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 5px;
+                        flex-grow: 2;
+                    }
+                    &_icon {
+                        width: 22px;
+                        height: 22px;
+                        display: flex;
+                        justify-content: center;
+                        padding-top:5px ;
+                        position: relative;
+                        transition-duration: 500ms ease;
+
+                        .fa-heart{
+                            width: 23px;
+                            height: 22px;
+                            font-size: 22.5px;
+                            opacity: 1;
+                            transition: opacity 500ms ease;
+
+                        }
+                        &:hover .fa-heart  {
+                            opacity: 0;
+                            transform: scale(1);
+                        }
+                        svg {
+                            position:absolute; 
+                            top: 4.5px;
+                            right: 0;
+                            left: 0px;
+                            bottom: 0;
+                            width: 22.7px;
+                            height: 24px;
+                            z-index: 2;
+                            opacity: 0;
+                            transition: opacity 800ms ease;
+
+                          
+                        }
+                        
+                        path{
+                            fill:url(#heartHover);
+                            
+                         }
+                         
+                         &:hover svg {
+                            opacity: 1;
+                            z-index: 2;
+                        }
+                        
+                    }
+
+                       
+                      
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 186px;
+    background-color: $footerBackground;
+    padding: 22px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+   
+    &_logo {
+        font-family: 'Shrikhand', cursive;
+        font-weight:400;
+        font-size: 16px; 
+        color: #fff;
+    }
+    &_link {
+        width: 100%;
+        height: 99px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 7px;
+        &_text {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            gap: 5px;
+            div {
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+}
