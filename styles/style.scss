@@ -329,11 +329,64 @@ body{
             color: #fff;
             text-decoration: none;
             display: flex;
-            gap: 5px;
+            gap: 7px;
+            &--margin {
+                div {
+                    margin-left: 6px;
+                }
+            }
             div {
                 color: #fff;
                 font-weight: bold;
             }
         }
     }
+}
+
+@media all and (min-width:757px) {
+    .information  {
+        h1 {
+            width: 100%;
+        }
+        p {
+            width: 100%;
+        }
+
+
+    }
+    .functioning{
+        padding: 50px 14%;
+        height: 228.38px;
+        &_steps{
+            flex-direction: row;
+            &_order{
+                width: 33%;
+            }
+        }
+    }
+    .restaurant{
+        padding: 50px 14%;
+        &_allCards{
+            gap: 20px;
+            &_twoCards{
+                flex-direction: row;
+                gap: 30px;
+            }
+        }
+
+    }
+    .footer{
+        height: 114px;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        justify-content: right;
+        &_link {
+            width: 631px;
+            height: 20px;
+            flex-direction: row;
+            gap: 17px;
+
+        }
+    }
+    
 }

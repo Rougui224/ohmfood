@@ -287,9 +287,53 @@ body {
   color: #fff;
   text-decoration: none;
   display: flex;
-  gap: 5px;
+  gap: 7px;
+}
+.footer_link_text--margin div {
+  margin-left: 6px;
 }
 .footer_link_text div {
   color: #fff;
   font-weight: bold;
+}
+
+@media all and (min-width: 757px) {
+  .information h1 {
+    width: 100%;
+  }
+  .information p {
+    width: 100%;
+  }
+  .functioning {
+    padding: 50px 14%;
+    height: 228.38px;
+  }
+  .functioning_steps {
+    flex-direction: row;
+  }
+  .functioning_steps_order {
+    width: 33%;
+  }
+  .restaurant {
+    padding: 50px 14%;
+  }
+  .restaurant_allCards {
+    gap: 20px;
+  }
+  .restaurant_allCards_twoCards {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .footer {
+    height: 114px;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: right;
+  }
+  .footer_link {
+    width: 631px;
+    height: 20px;
+    flex-direction: row;
+    gap: 17px;
+  }
 }/*# sourceMappingURL=style.css.map */
