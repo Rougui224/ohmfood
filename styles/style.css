@@ -6,6 +6,12 @@
   font-family: "Roboto";
 }
 
+html {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: white;
+}
+
 body {
   background-color: #F3F3F3;
 }
@@ -81,6 +87,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.information_button:hover, .information_button:focus {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 .functioning {
@@ -223,6 +233,7 @@ body {
   width: 22px;
   height: 22px;
   display: flex;
+  margin-right: 15px;
   justify-content: center;
   padding-top: 5px;
   position: relative;
@@ -305,7 +316,7 @@ body {
     width: 100%;
   }
   .functioning {
-    padding: 50px 14%;
+    padding: 50px 2%;
     height: 228.38px;
   }
   .functioning_steps {
@@ -313,9 +324,13 @@ body {
   }
   .functioning_steps_order {
     width: 33%;
+    gap: 0px;
+  }
+  .functioning_steps_order h3 {
+    font-size: 14px;
   }
   .restaurant {
-    padding: 50px 14%;
+    padding: 50px 2%;
   }
   .restaurant_allCards {
     gap: 20px;
@@ -335,5 +350,23 @@ body {
     height: 20px;
     flex-direction: row;
     gap: 17px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .functioning {
+    padding: 50px 10%;
+  }
+  .functioning_steps_order {
+    gap: 6px;
+  }
+  .restaurant {
+    padding: 50px 10%;
+  }
+  .restaurant_allCards {
+    gap: 25px;
+  }
+  .restaurant_allCards_twoCards {
+    flex-direction: row;
+    gap: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
