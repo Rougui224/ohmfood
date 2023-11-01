@@ -83,6 +83,7 @@ html {
   font-style: italic;
   font-weight: 400;
   font-size: 24px;
+  text-transform: capitalize;
 }
 .menu__heading__icon {
   width: 24px;
