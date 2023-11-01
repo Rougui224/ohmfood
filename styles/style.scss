@@ -7,8 +7,14 @@
     font-family: 'Roboto';
 
 }
+html {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: white;
+}
 body{
     background-color:$backgroundMain ;
+  
 
 }
 .header {
@@ -250,6 +256,7 @@ body{
                         width: 22px;
                         height: 22px;
                         display: flex;
+                        margin-right: 15px;
                         justify-content: center;
                         padding-top:5px ;
                         position: relative;
@@ -355,17 +362,21 @@ body{
 
     }
     .functioning{
-        padding: 50px 14%;
+        padding: 50px 2%;
         height: 228.38px;
         &_steps{
             flex-direction: row;
             &_order{
                 width: 33%;
+                gap: 0px;
+                h3 {
+                    font-size: 14px;
+                }
             }
         }
     }
     .restaurant{
-        padding: 50px 14%;
+        padding: 50px 2%;
         &_allCards{
             gap: 20px;
             &_twoCards{
@@ -388,5 +399,32 @@ body{
 
         }
     }
+    
+}
+@media all and (min-width:1024px) {
+    
+    .functioning{
+        padding: 50px 10%;
+      
+        &_steps{
+           
+            &_order{
+               
+                gap: 6px;
+            }
+        }
+    }
+    .restaurant{
+        padding: 50px 10%;
+        &_allCards{
+            gap: 25px;
+            &_twoCards{
+                flex-direction: row;
+                gap: 30px;
+            }
+        }
+
+    }
+   
     
 }
