@@ -138,6 +138,12 @@ body {
   font-weight: 500;
   font-size: 14.1818px;
 }
+.functioning_steps_order_icon .fa-solid {
+  color: #7E7E7E;
+}
+.functioning_steps_order:hover .functioning_steps_order_icon .fa-solid {
+  color: #9356DC;
+}
 .functioning_steps_order_text {
   margin-left: 12px;
   font-weight: bold;
@@ -156,6 +162,7 @@ body {
 }
 .restaurant_allCards {
   width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -237,6 +244,9 @@ body {
   justify-content: center;
   padding-top: 5px;
   position: relative;
+  left: 90%;
+  bottom: 75px;
+  z-index: 3;
   transition-duration: 500ms ease;
 }
 .restaurant_allCards_twoCards_card_text_icon .fa-heart {
@@ -280,6 +290,11 @@ body {
   justify-content: center;
   gap: 16px;
 }
+.footer-margin {
+  margin-top: -80px;
+  position: relative;
+  z-index: 3;
+}
 .footer_logo {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
@@ -316,7 +331,33 @@ body {
     width: 100%;
   }
   .functioning {
-    padding: 50px 2%;
+    padding: 20px 3.5%;
+    gap: 35px;
+  }
+  .restaurant {
+    padding: 50px 4%;
+    padding-right: 0%;
+  }
+  .restaurant_allCards {
+    gap: 20px;
+  }
+  .restaurant_allCards_twoCards {
+    flex-direction: row;
+    gap: 0px;
+  }
+  .restaurant_allCards_twoCards a {
+    flex-grow: 2;
+  }
+  .restaurant_allCards_twoCards_card_text_icon {
+    position: relative;
+    left: -5%;
+    top: 185px;
+    z-index: 3;
+  }
+}
+@media all and (min-width: 1024px) {
+  .functioning {
+    padding: 50px 10%;
     height: 228.38px;
   }
   .functioning_steps {
@@ -324,20 +365,21 @@ body {
   }
   .functioning_steps_order {
     width: 33%;
-    gap: 0px;
+    gap: 6px;
   }
   .functioning_steps_order h3 {
     font-size: 14px;
   }
   .restaurant {
-    padding: 50px 2%;
+    padding: 50px 10%;
+    padding-right: 7.9%;
   }
   .restaurant_allCards {
-    gap: 20px;
+    gap: 25px;
   }
   .restaurant_allCards_twoCards {
     flex-direction: row;
-    gap: 30px;
+    gap: 0px;
   }
   .footer {
     height: 114px;
@@ -350,23 +392,5 @@ body {
     height: 20px;
     flex-direction: row;
     gap: 17px;
-  }
-}
-@media all and (min-width: 1024px) {
-  .functioning {
-    padding: 50px 10%;
-  }
-  .functioning_steps_order {
-    gap: 6px;
-  }
-  .restaurant {
-    padding: 50px 10%;
-  }
-  .restaurant_allCards {
-    gap: 25px;
-  }
-  .restaurant_allCards_twoCards {
-    flex-direction: row;
-    gap: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

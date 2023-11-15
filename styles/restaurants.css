@@ -59,7 +59,6 @@ html {
   }
 }
 .menu {
-  height: 1175px;
   width: 100%;
   background-color: #F7F7F7;
   border-radius: 40px;
@@ -121,6 +120,9 @@ html {
   flex-direction: column;
   gap: 12px;
   margin-top: 42px;
+}
+.menu_sectionArticle-height {
+  height: 339px;
 }
 .menu_sectionArticle_title {
   height: 42px;
@@ -241,14 +243,16 @@ html {
   width: 100%;
   height: 186px;
   background-color: #353535;
-  padding: 22px 15px;
+  padding: 22px 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 16px;
-  margin-top: -100px;
+}
+.footer-margin {
+  margin-top: -80px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 .footer_logo {
   font-family: "Shrikhand", cursive;
@@ -281,7 +285,6 @@ html {
 @media all and (min-width: 757px) {
   .menu {
     width: 80%;
-    height: 1200px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -299,12 +302,13 @@ html {
   .menu_sectionArticle_items_description {
     padding: 7px 15px;
   }
+}
+@media all and (min-width: 1024px) {
   .footer {
     height: 114px;
     flex-direction: row-reverse;
     align-items: flex-end;
     justify-content: right;
-    margin-top: -75px;
   }
   .footer_link {
     width: 631px;
@@ -312,4 +316,4 @@ html {
     flex-direction: row;
     gap: 17px;
   }
-}/*# sourceMappingURL=palette.css.map */
+}/*# sourceMappingURL=restaurants.css.map */
