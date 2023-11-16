@@ -35,15 +35,15 @@ html {
 }
 .loading .un {
   background-color: #99E2D0;
-  animation-delay: 0.2s;
+  animation-delay: 0.3s;
 }
 .loading .deux {
   background-color: #FF79DA;
-  animation-delay: 0.3s;
+  animation-delay: 0.4s;
 }
 .loading .trois {
   background-color: #008766;
-  animation-delay: 0.4s;
+  animation-delay: 0.5s;
 }
 
 @keyframes move {
@@ -63,7 +63,7 @@ html {
   }
   100% {
     opacity: 0;
-    z-index: 0;
+    z-index: -1;
   }
 }
 body {
@@ -301,7 +301,6 @@ body {
   left: 90%;
   bottom: 75px;
   z-index: 3;
-  transition-duration: 500ms ease;
 }
 .restaurant_allCards_twoCards_card_text_icon .fa-heart {
   width: 23px;
@@ -312,7 +311,6 @@ body {
 }
 .restaurant_allCards_twoCards_card_text_icon:hover .fa-heart {
   opacity: 0;
-  transform: scale(1);
 }
 .restaurant_allCards_twoCards_card_text_icon svg {
   position: absolute;

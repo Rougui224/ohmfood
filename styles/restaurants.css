@@ -93,6 +93,10 @@ html {
   justify-content: center;
   align-items: center;
 }
+.menu__heading__icon .fa-heart {
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+}
 .menu__heading__icon:hover .fa-heart {
   opacity: 0;
 }
@@ -101,17 +105,18 @@ html {
 }
 .menu__heading__icon svg {
   position: absolute;
-  top: 0;
-  right: 0.15px;
+  top: -0.5px;
+  right: 0px;
   left: 0;
   bottom: 0;
   z-index: 3;
   opacity: 0;
-  transition: all 500ms ease;
+  transition: opacity 500ms ease-in-out;
 }
 .menu__heading__icon svg:hover {
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1.05);
+  left: 1px;
 }
 .menu_sectionArticle {
   width: 100%;
