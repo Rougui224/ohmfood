@@ -41,57 +41,25 @@
 }
 
 @keyframes move {
-    0%{
+    0%, 20%, 40%, 60%, 70%, 100% {
         margin-top: 0px;
-
     }
-    10%{
+    10%, 30%, 50%, 85% {
         margin-top: -50px;
     }
-    20%{
-        margin-top: 0px;
-    }
-    30%{
-        margin-top: -50px;
-    }
-    40%{
-        margin-top: 0px;
-    }
-    50%{
-        margin-top: -50px;
-    }
-    60%{
-        margin-top: 0px;
-    }
-    70%{
-        margin-top: 0px;
-    }
-    85%{
-        margin-top: -50px;
-    }
-  
-
-    100%{
-        margin-top: 0px;
+    100% {
         background-color: transparent;
     }
-    
 }
+
 @keyframes display {
     0%{
-        opacity: 1;
-      
+        opacity: 1;      
     }
-
     100%{
       opacity: 0;
-    
-      z-index: 0;
-     
+      z-index: 0;     
     }
-
-   
-    
 }
 
 body{
@@ -422,12 +390,13 @@ body{
     }
     .functioning{
         padding: 20px 3.5%;
+        padding-left: 5%;
         gap: 35px;
 
     }
    
     .restaurant{
-        padding: 50px 4%;
+        padding: 50px 5%;
         padding-right: 0%;
         &_allCards{
             gap: 20px;
