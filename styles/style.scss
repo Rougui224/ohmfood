@@ -1,6 +1,8 @@
 @import 'Utils/_variables.scss';
 @import 'Utils/_global.scss';
 
+// **************mobile first *******************
+
 .loading{
     width: 100%;
     height: 100%;
@@ -371,7 +373,7 @@ body{
 @import 'Utils/_footer.scss';
 
 
-
+//****************** tablette ****************
 @media all and (min-width:757px) {
     .information  {
         h1 {
@@ -416,6 +418,8 @@ body{
    
     
 }
+
+// *************** Desktop *****************
 @media all and (min-width:1024px) {
     .functioning{
         padding: 50px 10%;

@@ -7,9 +7,12 @@
 }
 
 html {
-  max-width: 1440px;
-  margin: 0 auto;
   background: white;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
 }
 
 .loading {
