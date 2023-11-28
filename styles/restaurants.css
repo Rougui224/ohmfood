@@ -94,12 +94,19 @@ html {
 .menu__heading__icon .fa-heart {
   opacity: 1;
   transition: all 500ms ease-in-out;
+  color: #101010;
 }
 .menu__heading__icon:hover .fa-heart {
   opacity: 0;
 }
 .menu__heading__icon path {
   fill: url(#heartHover);
+}
+.menu__heading__icon .stop1 {
+  stop-color: #9356DC;
+}
+.menu__heading__icon .stop2 {
+  stop-color: #FF79DA;
 }
 .menu__heading__icon svg {
   position: absolute;
@@ -191,10 +198,10 @@ html {
 .menu_sectionArticle_items .fa-circle-check {
   opacity: 0;
   transition: all 500ms 140ms ease-in-out;
+  color: white;
 }
 .menu_sectionArticle_items:hover .fa-circle-check {
   opacity: 1;
-  transform: rotate(360deg);
 }
 .menu_sectionArticle_items:hover .menu_sectionArticle_items_selectButton {
   width: 59px;
@@ -256,6 +263,9 @@ html {
   margin-top: -80px;
   position: relative;
   z-index: 3;
+}
+.footer .fa-solid {
+  color: #fff;
 }
 .footer_logo {
   font-family: "Shrikhand", cursive;

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b5b61096f1.js" crossorigin="anonymous"></script>
-    <title>Acceuil</title>
+    <title>Accueil</title>
 </head>
 <body>
     <!-- le laoder -->
@@ -25,7 +25,7 @@
         </div>
         <div class="header_location">
             <div class="header_location_icon">
-                <i class="fa-solid fa-location-dot" style="color: #353535;"></i>
+                <i class="fa-solid fa-location-dot" ></i>
             </div>
             <div class="header_location_text">
                 Paris, Belleville
@@ -41,10 +41,10 @@
             <p>
                 Découvrez des restaurants d’exception, sélectionnés par nos soins.
             </p>
-            <button class="information_button">
+            <a href="#mon_ancre" class="information_button">
                 Explorer nos restaurants
 
-            </button>
+            </a>
 
         </section>
 
@@ -94,7 +94,7 @@
         </section>
 
         <section class="restaurant">
-            <h2 class="restaurant_title">
+            <h2 id="mon_ancre" class="restaurant_title">
                Restaurants
             </h2>
             <div class="restaurant_allCards">
@@ -102,7 +102,8 @@
                     <a href="html/palette.html">
                         <div class="restaurant_allCards_twoCards_card">
                             <div class="restaurant_allCards_twoCards_card_img">
-                                <h3>Nouveau</h3>
+                                <label>Nouveau</label>
+                                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo du restaurant">
                             </div>
                             <div class="restaurant_allCards_twoCards_card_text">
                                 <div class="restaurant_allCards_twoCards_card_text_description">
@@ -116,7 +117,7 @@
                    </a>
                          <!-- les icones -->
                             <div class="restaurant_allCards_twoCards_card_text_icon">
-                                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                                <i class="fa-regular fa-heart" ></i>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 519 519">
                                     <path id="coeur" d="M47.6 300.4L228.3 469.1c7.5 7
                                     17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4
@@ -127,9 +128,8 @@
                                         
                                     <defs>
                                         <linearGradient id="heartHover" x1="0" x2="0" y1="0" y2="1">
-                                            <stop  offset="0%  "  style="stop-color:#9356DC  "   />
-                                            <stop  offset="100%"  style="stop-color: #FF79DA;  "  />
-                            
+                                            <stop class="stop1" offset="0%"/>
+                                            <stop class="stop2" offset="100%"/>
                                         </linearGradient>
                                     
                                     </defs>
@@ -140,8 +140,8 @@
                     <a href="html/laNote.html">
                         <div class="restaurant_allCards_twoCards_card">
                             <div class="restaurant_allCards_twoCards_card_img restaurant_allCards_twoCards_card_img--background1">
-                                <h3>Nouveau</h3>
-
+                                <label>Nouveau</label>
+                                <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash-2.jpg" alt="Photo du restaurant">
                             </div>
                             <div class="restaurant_allCards_twoCards_card_text">
                                 <div class="restaurant_allCards_twoCards_card_text_description">
@@ -154,9 +154,22 @@
                         </div>
                    </a>
                             <div class="restaurant_allCards_twoCards_card_text_icon">
-                                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                                <i class="fa-regular fa-heart" ></i>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 519 519">
-                                    <use xlink:href="#coeur"></use>
+                                    <path id="coeur" d="M47.6 300.4L228.3 469.1c7.5 7
+                                    17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4
+                                    300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347
+                                    36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5
+                                        55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" 
+                                    />
+                                        
+                                    <defs>
+                                        <linearGradient id="heartHover" x1="0" x2="0" y1="0" y2="1">
+                                            <stop class="stop1" offset="0%"/>
+                                            <stop class="stop2" offset="100%"/>
+                                        </linearGradient>
+                                    
+                                    </defs>
                                 
                                 </svg> 
                                             
@@ -165,7 +178,10 @@
                 <div class="restaurant_allCards_twoCards">
                     <a href="html/alaFrançaise.html">
                         <div class="restaurant_allCards_twoCards_card">
-                            <div class="restaurant_allCards_twoCards_card_img restaurant_allCards_twoCards_card_img--background2"></div>
+                            <div class="restaurant_allCards_twoCards_card_img restaurant_allCards_twoCards_card_img--background2">
+                                <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo du restaurant">
+
+                            </div>
                             <div class="restaurant_allCards_twoCards_card_text">
                                 <div class="restaurant_allCards_twoCards_card_text_description">
                                     <h3>À la française</h3>
@@ -177,18 +193,34 @@
                         </div>
                    </a>
                                <div class="restaurant_allCards_twoCards_card_text_icon">
-                                    <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                                    <i class="fa-regular fa-heart" ></i>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 519 519">
-                                        <use xlink:href="#coeur"></use>
+                                        <path id="coeur" d="M47.6 300.4L228.3 469.1c7.5 7
+                                        17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4
+                                        300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347
+                                        36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5
+                                            55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" 
+                                        />
+                                            
+                                        <defs>
+                                            <linearGradient id="heartHover" x1="0" x2="0" y1="0" y2="1">
+                                                <stop class="stop1" offset="0%"/>
+                                                <stop class="stop2" offset="100%"/>
+                                            </linearGradient>
+                                        
+                                        </defs>
                                     
                                     </svg> 
+
                                 </div>
                     <a href="html/Delice.html">
                         <div class="restaurant_allCards_twoCards_card">
-                            <div class="restaurant_allCards_twoCards_card_img restaurant_allCards_twoCards_card_img--background3 "></div>
+                            <div class="restaurant_allCards_twoCards_card_img restaurant_allCards_twoCards_card_img--background3 ">
+                                <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo du restaurant">
+                            </div>
                             <div class="restaurant_allCards_twoCards_card_text">
                                 <div class="restaurant_allCards_twoCards_card_text_description">
-                                    <h3>Le Délice des sens</h3>
+                                    <h3>Le délice des sens</h3>
                                     <p>Folie-Méricourt</p>
                                 </div>
                                
@@ -197,9 +229,22 @@
                         </div>
                    </a>
                            <div class="restaurant_allCards_twoCards_card_text_icon">
-                                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                                <i class="fa-regular fa-heart"></i>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 519 519">
-                                    <use xlink:href="#coeur"></use>
+                                    <path id="coeur" d="M47.6 300.4L228.3 469.1c7.5 7
+                                    17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4
+                                    300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347
+                                    36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5
+                                        55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" 
+                                    />
+                                        
+                                    <defs>
+                                        <linearGradient id="heartHover" x1="0" x2="0" y1="0" y2="1">
+                                            <stop class="stop1" offset="0%"/>
+                                            <stop class="stop2" offset="100%"/>
+                                        </linearGradient>
+                                    
+                                    </defs>
                                 
                                 </svg> 
                             </div>
@@ -215,11 +260,11 @@
         </div>
         <div class="footer_link">
             <a href="" class="footer_link_text footer_link_text--margin" >
-                <i class="fa-sharp fa-solid fa-utensils" style="color: #ffffff;"></i> 
+                <i class="fa-sharp fa-solid fa-utensils" ></i> 
                 <div>Proposer un restaurant</div>
             </a>
             <a href="" class="footer_link_text">
-                <i class="fa-solid fa-handshake-angle" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-handshake-angle" ></i>
                 <div>Devenir partenaire</div>
             </a>
             <a href="" class="footer_link_text">Mentions légales</a>

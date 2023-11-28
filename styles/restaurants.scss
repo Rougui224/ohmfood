@@ -87,6 +87,7 @@
             .fa-heart{
                 opacity: 1;
                 transition: all 500ms ease-in-out;
+                color: #101010;
                 
             }
             &:hover .fa-heart{
@@ -96,7 +97,13 @@
             path{
                 fill:url(#heartHover);
                 
-            }
+            } 
+            .stop1{
+                stop-color:#9356DC  ;
+              }
+              .stop2{
+                stop-color: #FF79DA;
+              }
         
             svg{
                 position:absolute; 
@@ -196,12 +203,13 @@
             .fa-circle-check{
                 opacity: 0;
                 transition: all 500ms 140ms ease-in-out;
+                color: white;
                
              
             }
             &:hover .fa-circle-check{
                 opacity: 1;
-                transform: rotate(360deg);
+              
             }
             &:hover &_selectButton{
                 width: 59px;
